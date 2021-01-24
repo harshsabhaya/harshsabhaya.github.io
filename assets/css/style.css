@@ -81,7 +81,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #191d2b;
   overflow-y: auto;
 }
-
+.profile {
+  margin-top: 35px ;
+}
 #header .profile img {
   margin: 15px auto;
   display: block;
@@ -250,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -258,8 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -278,13 +279,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 36px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero p {
+    padding-left: 20px ;
   }
 }
 
@@ -1086,7 +1090,7 @@ section .row {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: var(--bgColor);
 }
 
 #footer .copyright {
