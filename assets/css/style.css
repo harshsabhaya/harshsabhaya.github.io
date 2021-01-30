@@ -16,7 +16,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: var(--fontColor);
 }
 
 a {
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Fira code", sans-serif;
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
@@ -317,6 +317,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #fff;
+  font-family: "fira code";
 }
 
 .section-title h2::after {
@@ -341,7 +342,8 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #ffff;
+  color: #fff;
+  font-family: "fira code";
 }
 
 section .row {
@@ -469,7 +471,8 @@ section .row {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #b2c5ce;
+  font-family: "fira code";
 }
 
 .resume .resume-item {
@@ -483,12 +486,18 @@ section .row {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+  text-transform: capitalize;
+  font-family: "fira code";
   margin-bottom: 10px;
+  color: cornflowerblue;
 }
-
+.resume .resume-item h4 em {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--fontColor);
+}
 .resume .resume-item h5 {
   font-size: 16px;
   background: #e4edf9;
@@ -496,6 +505,7 @@ section .row {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: black
 }
 
 .resume .resume-item ul {
