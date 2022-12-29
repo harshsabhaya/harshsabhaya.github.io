@@ -402,7 +402,7 @@ section .row {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: #fff;
   margin-left: 60px;
 }
 
@@ -411,7 +411,7 @@ section .row {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #829abb;
 }
 
 .facts .count-box a {
