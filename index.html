@@ -20,10 +20,9 @@
   <link href="assets/img/apple-touch-icon.jpeg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -86,22 +85,66 @@
 
         </ul>
       </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
 
   
-  <main id="main" class="mainBody" style="background-color: #10121b;">
+  <main id="main" class="mainBody">
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="hero-container" data-aos="fade-in">
-        <div class="d-flex justify-content-center">
-          <h1 style="font-family: 'Fauna One', serif; font-weight: 500;" class="mb-0">Harsh Sabhaya</h1>
+      <!-- Animated Background -->
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      
+      <div class="hero-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+          <span class="dot"></span>
+          <span>Available for opportunities</span>
         </div>
-        <p style="font-family: 'Fauna One', serif; padding-top: 14px;">
-          I'm <span class="typed" data-typed-items="Software Engineer"></span> <!-- here it items allow comma separared -->
-        </p>
+        <h1>Hi, I'm <span class="gradient-text">Harsh Sabhaya</span></h1>
+        <p class="hero-subtitle">I'm a <span class="typed" data-typed-items="Software Engineer, Full-Stack Developer, React Specialist"></span></p>
+        <p class="hero-description">Building scalable web applications with modern technologies.<br>Currently based in Toronto, Canada.</p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+          <a href="#portfolio" class="btn-primary-hero"><i class="bx bx-folder-open"></i> View My Work</a>
+          <a href="#about" class="btn-secondary-hero"><i class="bx bx-user"></i> About Me</a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Companies</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
       </div>
     </section><!-- End Hero -->
 
@@ -112,8 +155,8 @@
         <div class="section-title">
           <h2 class="fontHeading">About</h2>
           <p class="font-italic">
-            Hi There, I am a Software Engineer having 2+ years of 
-            Professional experience in Software Development.
+            Hi There! I am a Software Engineer with 4+ years of 
+            professional experience in Full-Stack Development.
           </p>
         </div>
 
@@ -122,35 +165,26 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
-            <!-- <h3>Software Developer</h3> -->
-            <h3>Master's Student at University of Windsor</h3>
+            <h3>Software Developer</h3>
             <p style=
               "text-align: justify;
               text-justify: inter-word;"
             >
-              At Present, I'm a Master's student at the University of Windsor, specializing in Applied Computing. With a focus on industry-oriented practical aspects, my program equips me with the latest skills and knowledge to thrive in the rapidly evolving software industry. Through practical projects, internships, and a unique blend of computer science and business courses, I'm poised to make impactful contributions to this dynamic, global field.
+              I recently graduated with a Master of Applied Computing from the University of Windsor, Canada. With hands-on experience at Fidelity Investments Canada, I've engineered high-performance dashboards using React and TypeScript for wealth management solutions. My expertise spans frontend technologies like React, Next.js, and TypeScript, along with backend development using Node.js, PostgreSQL, and cloud platforms. I'm passionate about building scalable, user-centric applications and continuously exploring emerging technologies like Generative AI and LLMs.
             </p>
-            <!-- <p>
-              Apart from my curricular activities, 
-              I like to spend leisure time with my friends, read books, play chess and watch movies.
-            </p> -->
             <div class="row">
               <div class="col-lg-8" style="padding-left: 0!important;">
                 <ul>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> September 16, 1998</li> -->
                   <li><i class="icofont-envelope"></i> <strong class="d-none d-md-inline">Email &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</strong> 
-                    <a href="mailto:harshsabhaya10@gmail.com">harshsabhaya10@gmail.com</a>
+                    <a href="mailto:harsh.sabhaya@outlook.com">harsh.sabhaya@outlook.com</a>
                   </li>
                   <li><i class="icofont-phone"></i> <strong class="d-none d-md-inline">Phone&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</strong> +1 (226) 961-5428</li>
                   <li><i class="icofont-location-pin"></i> <strong class="d-none d-md-inline">City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</strong> Toronto, Canada</li>
-                  <li><i class="icofont-papers"></i> <strong class="d-none d-md-inline">Degree &nbsp;:&nbsp;&nbsp;</strong> Pursuing Master of Applied Computing</li>
+                  <li><i class="icofont-papers"></i> <strong class="d-none d-md-inline">Degree &nbsp;:&nbsp;&nbsp;</strong> Master of Applied Computing</li>
                 </ul>
               </div>
               <div class="col-lg-4">
                 <ul>
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 22</li> -->
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> <a href="https://bootstrapmade.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d38303c34311d38253c302d3138733e3230">[email&#160;protected]</a></li> -->
-                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li> -->
                 </ul>
               </div>
             </div>
@@ -215,205 +249,163 @@
       <div class="container px-0 px-md-3">
 
         <div class="section-title">
-          <h2>My Skills</h2>
-          <p>As an individual, I thrive on continuous learning and the pursuit of new knowledge. I believe that acquiring new skills opens doors to innovative solutions and opportunities. The more I learn, the more perspectives I gain, enabling a deeper understanding of situations. I am passionate about the endless journey of discovery and growth.</p>
+          <h2>Technical Skills</h2>
+          <p>I thrive on continuous learning and the pursuit of new knowledge. Acquiring new skills opens doors to innovative solutions and opportunities.</p>
         </div>
 
-        <div class="row skills-content">
+        <div class="row skills-content justify-content-center">
           
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Programming <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Frontend Skills -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card">
+              <h4><i class="bx bx-code-alt"></i>Frontend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">Material UI</span>
+                <span class="skill-tag">RTK Query</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">HTML5/CSS3</span>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Problem Solving <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            
-            <div class="progress">
-              <span class="skill">Front-End <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Back-End <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            
           </div>
-          
-          <div class="col-lg-5 " data-aos="fade-up" data-aos-delay="100">
-        
-            <div class="progress">
-              <span class="skill">Tools (Git, Github, Bitbucket, Trello, Jira) <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+
+          <!-- Backend Skills -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card">
+              <h4><i class="bx bx-server"></i>Backend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">gRPC</span>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Responsive Design <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Verbal and Written communication <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Team Leading <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
+
+          <!-- Database Skills -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-card">
+              <h4><i class="bx bx-data"></i>Databases</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps Skills -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-card">
+              <h4><i class="bx bx-cloud"></i>Cloud & DevOps</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Jenkins</span>
+                <span class="skill-tag">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-card">
+              <h4><i class="bx bx-wrench"></i>Tools & Practices</h4>
+              <div class="skill-tags" style="justify-content: center;">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Agile/Scrum</span>
+                <span class="skill-tag">Jest</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Figma</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section><!-- End Skills Section -->
 
     <!-- ======================================== Resume Section ======================================== -->
-    <section id="resume" class="resume"resume-item>
+    <section id="resume" class="resume">
       <div class="container px-0 px-md-3">
 
         <div class="section-title">
           <h2>Resume</h2>
           <p style="font-style: italic;">
             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Passionate Applied Computing student seeking to apply practical skills in the software industry for impactful contributions and innovation
+            Passionate Software Developer with expertise in full-stack development, seeking to build impactful and innovative solutions
             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           </p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <!-- <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Harsh Sabhaya</h4>
-              <p><em>As an experienced software developer for 3 years, I'm now mastering Applied Computing at the University of Windsor. Learning practical skills and a mix of computer science and business, I'm geared up to bring valuable contributions to the dynamic world of software.</em></p>
-              <ul>
-                <li>Windsor, Ontario, Canada</li>
-                <li>+1 (226) 961-5428</li>
-                <li>sabhayah@uwindsor.ca</li>
-              </ul>
-            </div> -->
-
-            <div>
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Master of Applied Computing (MAC)</h4>
-                <h5>Jan 2024 - Pursuing</h5>
-                <p><em>University of Windsor, Ontario, Canada</em></p>
-                <ul>
-                  <li>
-                    As a Master's student, I'm exploring Advanced Software Engineering, Databases, and Computing Concepts, with a focus on Artificial Intelligence, including Introduction to AI and Applied AI. Excited to apply these insights in the tech field!
-                  </li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Bachelor of Computer Engineering</h4>
-                <h5>Jun 2016 - Aug 2020</h5>
-                <p><em>Gujarat Technological University, Gujarat, India </em></p>
-                <ul>
-                  <li>
-                    During my undergrad, I studied C Programming, C++, Java, Python, Data Structures, Algorithms, Databases, Software Engineering, Artificial Intelligence, Compiler Design, Theory of Computation, Operating Systems, Computer Networks, and Cybersecurity, building a strong foundation in computer science.  
-                  </li>
-                </ul>
-              </div>
-            </div>
-         </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             
-            <!-- WebOsmotic Experience -->
+            <!-- Fidelity Canada Experience -->
             <div class="resume-item">
-              <h4>Software Developer Intern</h4>
-              <p> <a href="https://www.fidelity.ca/en/" target="_blank" style="color: #a4acc4;">At Fidelity Canada</a></p>
-              <h5>Jan 2025 - Present</h5>
-              <p><em>Toronto, Canada </em></p>
-              <!-- <ul>
-                <li>Collaborated on an Angular and Spring Boot-based microservices project to implement new features and fix issues, resulting in improved application functionality and user experience.</li>
-                <li>Addressed Critical and High vulnerabilities, including SQL Injection, by collaborating with peers and applying secure coding practices, significantly improving system security and resilience.</li>
-                <li>Integrated an Application Performance Monitoring (APM) tool into the product, enabling data visualization, infrastructure monitoring, and error tracking to improve performance insights.</li>
-                <li>Led daily stand-ups as Scrum Master and participated in sprint planning, reviews, and retrospectives, facilitating team communication and ensuring agile process efficiency.</li>
-              </ul> -->
-            </div>
-
-            <!-- WebOsmotic Experience -->
-            <div class="resume-item">
-              <h4>Software Developer</h4>
-              <p> <a href="https://webosmotic.com/" target="_blank" style="color: #a4acc4;">At WebOsmotic Pvt. Ltd.</a></p>
-              <h5>Mar 2023 - Nov 2023</h5>
-              <p><em>Surat, India </em></p>
-              <!-- <ul>
-                <li>Defines and adhere to software engineering best practices to ensure a high standard of quality and maintainability for all deliverables</li>
-                <li>As needed, work at various stages of agile SDLC: Development, test automation, build & deployment automation, monitoring</li>
-                <li>Take initiative and come up with new ideas to invent solutions for customers</li>
-                <li>Work on developing components of a secure continuous delivery pipeline</li>
-                <li>Review code developed by other developers and provide feedback to ensure best practices</li>
-              </ul> -->
+              <h4>Software Developer Co-op</h4>
+              <div class="company-header">
+                <img src="assets/img/logos/fidelitycanada_logo.jpg" alt="Fidelity" class="company-logo">
+                <a href="https://www.fidelity.ca/en/" target="_blank" class="company-name">Fidelity Investments Canada</a>
+              </div>
+              <h5>Jan 2025 - Aug 2025</h5>
+              <p><em>Toronto, Canada</em></p>
             </div>
 
             <!-- SightInfusion Infotech Experience -->
-            <!-- <div class="resume-item">
-              <h4>Frontend Developer</h4>
-              <p> <a href="https://www.sightinfusion.com/" target="_blank" style="color: #a4acc4;">At SightInfusion Infotech</a></p>
-              <h5>March 2022 - March 2023</h5>
-              <p><em>Surat, Gujarat, India </em></p>
-              <ul>
-                <li>Defines and adhere to software engineering best practices to ensure a high standard of quality and maintainability for all deliverables</li>
-                <li>As needed, work at various stages of agile SDLC: Development, test automation, build & deployment automation, monitoring</li>
-                <li>Take initiative and come up with new ideas to invent solutions for customers</li>
-                <li>Work on developing components of a secure continuous delivery pipeline</li>
-                <li>Review code developed by other developers and provide feedback to ensure best practices</li>
-              </ul>
-            </div> -->
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <div class="company-header">
+                <img src="assets/img/logos/sightinfusion_logo.jpg" alt="Sight Infusion" class="company-logo">
+                <a href="https://www.sightinfusion.com/" target="_blank" class="company-name">Sightinfusion Infotech</a>
+              </div>
+              <h5>Apr 2022 - Nov 2023</h5>
+              <p><em>India</em></p>
+            </div>
 
             <!-- Appscrip experience -->
             <div class="resume-item">
-              <h4>Software Engineer</h4>
-              <p> <a href="https://appscrip.com/" target="_blank" style="color: #a4acc4;">At Appscrip (3Embed Software Technologies Pvt. Ltd.)</a></p>
+              <h4>Frontend Engineer</h4>
+              <div class="company-header">
+                <img src="assets/img/logos/appscrip_logo.jpg" alt="Appscrip" class="company-logo">
+                <a href="https://appscrip.com/" target="_blank" class="company-name">Appscrip (formerly 3Embed Software Technologies Pvt. Ltd.)</a>
+              </div>
               <h5>Sept 2020 - Mar 2022</h5>
-              <p><em>Bengaluru, India </em></p>
-              <!-- <ul>
-                <li>Work in a team to develop, compile, test, debug & deploy software</li>
-                <li>Develop web and mobile applications using JavaScript, Python, Java, HTML and CSS</li>
-                <li>Analyze and maintain existing software applications</li>
-                <li>Write documentation for the software and APIs</li>
-                <li>Codes and debugs a variety of automation-related software features and tools</li>
-                <li>Support software during production and provide hotfixes</li>
-              </ul> -->
+              <p><em>India</em></p>
             </div>
-
-            <!-- Internship Experience -->
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Python Developer Intern </h4>
-              <p><a href="https://brainybeaminfotech.com/" target="_blank" style="color: #a4acc4;"> At Brainy Beam Technology Pvt. Ltd.</a></p>
-              <h5>Sept 2019 - Nov-2019 </h5>
-              <p><em>Ahmedabad, India</em></p>
-              <!-- <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul> -->
+              <h4>Master of Applied Computing</h4>
+              <div class="company-header">
+                <img src="assets/img/logos/uwindsor_logo.jpg" alt="University of Windsor" class="company-logo">
+                <a href="https://www.uwindsor.ca/" target="_blank" class="company-name">University of Windsor</a>
+              </div>
+              <h5>Jan 2024 - Aug 2025</h5>
+              <p><em>Ontario, Canada</em></p>
+              <p class="gpa">GPA: 3.78/4.0</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Engineering in Computer Engineering</h4>
+              <div class="company-header">
+                <img src="assets/img/logos/gujarat_technological_university_ahmedbabd_logo.jpg" alt="GTU" class="company-logo">
+                <a href="https://www.gtu.ac.in/" target="_blank" class="company-name">Gujarat Technological University</a>
+              </div>
+              <h5>Jul 2016 - Aug 2020</h5>
+              <p><em>India</em></p>
+              <p class="gpa">CGPA: 8.87/10</p>
             </div>
           </div>
         </div>
@@ -446,70 +438,91 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/navigationapp/nav1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/navigationapp/nav1.png" data-gall="portfolioGallery" class="venobox" title="AR Indoor Navigation System"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/harshsabhaya/AR_Indoor_Navigation_System" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/navigationapp/nav1.png" class="img-fluid" alt="AR Indoor Navigation System">
+              <div class="portfolio-info">
+                <h4>AR Indoor Navigation System</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/navigationapp/nav1.png" data-gall="portfolioGallery" class="venobox" title="AR Indoor Navigation System"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/harshsabhaya/AR_Indoor_Navigation_System" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/fileserver/fileserver1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/fileserver/fileserver1.jpg" data-gall="portfolioGallery" class="venobox" title="Distributed File System"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/harshsabhaya/distributed-file-system" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/fileserver/fileserver1.jpg" class="img-fluid" alt="Distributed File System">
+              <div class="portfolio-info">
+                <h4>Distributed File System</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/fileserver/fileserver1.jpg" data-gall="portfolioGallery" class="venobox" title="Distributed File System"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/harshsabhaya/distributed-file-system" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/meolaa/meolaa1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/meolaa/meolaa1.jpg" data-gall="portfolioGallery" class="venobox" title="Meolaa"><i class="bx bx-plus"></i></a>
-                <a href="https://meolaa.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/meolaa/meolaa1.jpg" class="img-fluid" alt="Meolaa">
+              <div class="portfolio-info">
+                <h4>Meolaa</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/meolaa/meolaa1.jpg" data-gall="portfolioGallery" class="venobox" title="Meolaa"><i class="bx bx-plus"></i></a>
+                  <a href="https://meolaa.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/baru/baru1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/baru/baru1.jpg" data-gall="portfolioGallery" class="venobox" title="Hello Baru"><i class="bx bx-plus"></i></a>
-                <a href="https://shop.barucabinets.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/baru/baru1.jpg" class="img-fluid" alt="Baru - Custom Cabinets">
+              <div class="portfolio-info">
+                <h4>Baru - Custom Cabinets</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/baru/baru1.jpg" data-gall="portfolioGallery" class="venobox" title="Baru - Custom Cabinets"><i class="bx bx-plus"></i></a>
+                  <a href="https://shop.barucabinets.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/boatzon/boatzon1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/boatzon/boatzon1.jpg" data-gall="portfolioGallery" class="venobox" title="Boatzon"><i class="bx bx-plus"></i></a>
-                <a href="https://boatzon.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/boatzon/boatzon1.jpg" class="img-fluid" alt="Boatzon">
+              <div class="portfolio-info">
+                <h4>Boatzon</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/boatzon/boatzon1.jpg" data-gall="portfolioGallery" class="venobox" title="Boatzon"><i class="bx bx-plus"></i></a>
+                  <a href="https://boatzon.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pollution/pollution1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pollution/pollution1.png" data-gall="portfolioGallery" class="venobox" title="Pollution Monitoring System"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/harshsabhaya/pollution-monitoring-system" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/pollution/pollution1.png" class="img-fluid" alt="Pollution Monitoring System">
+              <div class="portfolio-info">
+                <h4>Pollution Monitoring System</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/pollution/pollution1.png" data-gall="portfolioGallery" class="venobox" title="Pollution Monitoring System"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/harshsabhaya/pollution-monitoring-system" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/clothing/clothing.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/clothing/clothing.png" data-gall="portfolioGallery" class="venobox" title="Clothing Price Analyzer"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/harshsabhaya/clothing-price-analysis" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/clothing/clothing.png" class="img-fluid" alt="Clothing Price Analyzer">
+              <div class="portfolio-info">
+                <h4>Clothing Price Analyzer</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/clothing/clothing.png" data-gall="portfolioGallery" class="venobox" title="Clothing Price Analyzer"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/harshsabhaya/clothing-price-analysis" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
