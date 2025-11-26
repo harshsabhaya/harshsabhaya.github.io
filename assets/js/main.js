@@ -132,9 +132,88 @@
       });
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
+      // Portfolio Modal Functionality
     $(document).ready(function() {
-      $('.venobox').venobox();
+      var portfolioItems = $('.portfolio-item');
+      var currentIndex = 0;
+      var modal = $('.portfolio-modal');
+      var modalImg = modal.find('.portfolio-modal-img img');
+      var modalTitle = modal.find('.portfolio-modal-details h3');
+      var modalDesc = modal.find('.portfolio-modal-details p');
+      var modalLink = modal.find('.portfolio-modal-link');
+      
+      // Open modal when clicking on portfolio item (but not the link button)
+      $('.portfolio-wrap').on('click', function(e) {
+        // Don't open modal if clicking the external link button
+        if ($(e.target).hasClass('portfolio-link-btn') || $(e.target).closest('.portfolio-link-btn').length) {
+          return;
+        }
+        
+        var item = $(this).closest('.portfolio-item');
+        currentIndex = portfolioItems.index(item);
+        openModal(item);
+      });
+      
+      // Close modal
+      $('.portfolio-modal-close, .portfolio-modal-overlay').on('click', function() {
+        closeModal();
+      });
+      
+      // Prevent close when clicking modal content
+      $('.portfolio-modal-content').on('click', function(e) {
+        e.stopPropagation();
+      });
+      
+      // Navigation
+      $('.portfolio-modal-prev').on('click', function(e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + portfolioItems.length) % portfolioItems.length;
+        openModal(portfolioItems.eq(currentIndex));
+      });
+      
+      $('.portfolio-modal-next').on('click', function(e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % portfolioItems.length;
+        openModal(portfolioItems.eq(currentIndex));
+      });
+      
+      // Keyboard navigation
+      $(document).on('keydown', function(e) {
+        if (!modal.hasClass('active')) return;
+        
+        if (e.key === 'Escape') {
+          closeModal();
+        } else if (e.key === 'ArrowLeft') {
+          $('.portfolio-modal-prev').click();
+        } else if (e.key === 'ArrowRight') {
+          $('.portfolio-modal-next').click();
+        }
+      });
+      
+      function openModal(item) {
+        var imgSrc = item.data('img');
+        var title = item.data('title');
+        var desc = item.data('desc');
+        var link = item.data('link');
+        
+        modalImg.attr('src', imgSrc);
+        modalTitle.text(title);
+        modalDesc.text(desc);
+        
+        if (link) {
+          modalLink.attr('href', link).show();
+        } else {
+          modalLink.hide();
+        }
+        
+        modal.addClass('active');
+        $('body').addClass('modal-open').css('overflow', 'hidden');
+      }
+      
+      function closeModal() {
+        modal.removeClass('active');
+        $('body').removeClass('modal-open').css('overflow', '');
+      }
     });
   });
 
